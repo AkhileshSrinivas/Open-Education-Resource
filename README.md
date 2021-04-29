@@ -83,11 +83,6 @@ Based on the keywords, user will acquire the data and with the support of electr
 # Back-end
 
 - Java
-
-# Server
-
 - Apache Tomcat
-
-# Database
-
+- JDBC
 - MySql Workbench
