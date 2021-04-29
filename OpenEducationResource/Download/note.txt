@@ -1,0 +1,178 @@
+<%@page import="Logic.info"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title><%=info.proj_name%></title>
+        <meta name="keywords" content="css templates, fortune website, CSS, HTML" />
+        <meta name="description" content="Fortune Template is a free css template from templatemo.com" />
+        <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <script language="JavaScript">
+            javascript:window.history.forward(1);
+        </script>
+        <script language="javascript" type="text/javascript">
+            function clearTF()
+            {
+                document.getElementById("user").value="";   
+            }
+            function clearPF()
+            {
+
+                document.getElementById("pass").value="";
+            }
+        </script>
+        <script language="javascript">
+            function validate(){
+                var user=document.getElementById("user").value;
+                var pass=document.getElementById("pass").value;
+        
+                if(user.length==0)
+                {
+                    alert("enter username");
+                    return false;
+                }
+            
+                if(user.length<6)
+                {
+                    alert("username must be greater than or equal to 6 ");
+                    return false;
+                }
+            
+                if(pass.length==0)
+                {
+                    alert("enter password");
+                    return false;
+                }
+             
+                if(pass.length<6)
+                {
+                    alert("password must be greater than or equal to 6 ");
+                    return false;
+                }
+        
+        
+            }
+        </script>
+        <%
+
+            String msg = "", user = "";
+            if (session.getAttribute("msg") != null) {
+                msg = session.getAttribute("msg").toString();
+            } else {
+                msg = "";
+            }
+
+            if (request.getAttribute("user") != null) {
+                user = request.getAttribute("user").toString();
+            } else {
+                user = "";
+            }
+        %>
+   
+        <style>
+.mySlides {display:none;}
+</style>
+    </head>
+
+    
+    <body>
+         <div id="templatemo_header_wrapper">
+               
+                <div id="templatemo_tagline">
+
+                </div>
+            </div>
+      
+                    
+
+        <div id="templatemo_banner_wrapper">
+            
+
+<div class="w3-content w3-section" style="width:980px; height:240px; margin:0 auto; text-align: center;">
+  <img class="mySlides" src="images/L1.jpg" style="width:980px; height:240px; margin:0 auto; text-align: center;"/>
+  <img class="mySlides" src="images/L2.jpg" style="width:980px; height:240px; margin:0 auto; text-align: center;"/>
+   <img class="mySlides" src="images/L3.jpg" style="width:980px; height:240px; margin:0 auto; text-align: center;"/>
+    <img class="mySlides" src="images/L4.jpg" style="width:980px; height:240px; margin:0 auto; text-align: center;"/>
+     <img class="mySlides" src="images/L5.jpg" style="width:980px; height:240px; margin:0 auto; text-align: center;"/>
+      <img class="mySlides" src="images/L6.jpg" style="width:980px; height:240px; margin:0 auto; text-align: center;"/>
+      
+ 
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+                
+           
+    
+        </div>
+         
+        <div id="innerwrapper">
+           
+            </td>
+            <td width="639" valign="top">
+                <table align="center" width="600">
+
+                    <tr>
+                        <td><br></td>
+                    </tr>
+                    <br />
+                    <tr>
+                        <td class="paragraping1" align="justify">
+                            <a href="smart_campus.apk">Download App</a>
+                                
+                            <h2>Login Here</h2>
+                         
+                            <form name="login" action="./login" method="get"  onsubmit="return validate();">
+                                <table>
+                                    <tr>
+                                        <td style="font-size: 16px; font-weight: bold; color: black">Username :</td><td><input type="text" name="user" id="user" placeholder="User Name" style="width: 200px" /></td>
+                                    </tr>
+                                    <tr>
+
+                                        <td style="font-size: 16px; font-weight: bold; color: black">Password :</td><td><input type="password" name="pass" id="pass" placeholder="Password"  style="width: 200px" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <br/>
+                                        <td><input type="submit" name="submit"  style="width: 100px" value="Login"/>
+                                            <input type="reset" name="reset"  style="width: 100px" value="Reset"/></td>
+                                    </tr>
+                                </table>
+
+                            </form>
+
+
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+            </tr>
+            </table>   
+        </div>
+        <div id="footer">
+            <p align="center"><span style="float:center;">&nbsp;&nbsp;&nbsp; Copyright © 2017 <a href="index.jsp"><%=info.proj_name%></a> |  All rights reserved || </span>
+            </p>
+        </div>
+        </div>
+    </body>
+</html>

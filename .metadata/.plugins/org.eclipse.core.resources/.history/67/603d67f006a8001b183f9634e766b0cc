@@ -1,0 +1,75 @@
+package Sample;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class LoginDao {
+	
+	public String autheticateUser(LoginBean loginBean)
+	{
+		String userName = loginBean.getUserName();
+		System.out.println(userName);
+		String password = loginBean.getPassword();
+		System.out.println(password);
+		 Connection conn = null;
+		 Statement stmt = null;
+		 ResultSet resultSet = null;
+		 
+		 String userNameDB = "";
+		 String passwordDB = "";
+		 String roleDB = "";
+		 
+		
+		 
+		 try
+		 {
+			 String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+			 String DB_URL = "jdbc:mysql://localhost:3306/learningframework";
+			    String USER = "root";
+			    String PASS = "rootqwer";
+			    conn = DriverManager.getConnection(DB_URL,USER,PASS);
+				stmt = conn.createStatement();
+			 resultSet = stmt.executeQuery("select emailid,Password,Role from users");
+			 
+			 while(resultSet.next())
+			 { 
+			 
+				 userNameDB = resultSet.getString("emailid");
+				 System.out.println(userNameDB);
+				 passwordDB = resultSet.getString("Password");
+				 System.out.println(passwordDB);
+				 roleDB = resultSet.getString("Role");
+				 System.out.println(roleDB);
+			 if(userName.equals(userNameDB) && password.equals(passwordDB) && roleDB.equals("Lecturer"))
+				 
+				 return "Lecturer_Role";
+			 
+			 if(userName.equals(userNameDB) && password.equals(passwordDB) && roleDB.equals("User"))
+				 
+				 return "User_Role";
+                         
+                         
+                         
+                         
+                          if(userName.equals(userNameDB) && password.equals(passwordDB) && roleDB.equals("Editor"))
+				 
+				 return "Editor";
+		
+                         
+			 }
+			 
+			 conn.close();
+			 
+		 }catch(Exception e)
+		 {
+			 e.printStackTrace();
+		 }
+		 
+		 return "Invalid User Credentials";
+		
+	}
+
+}

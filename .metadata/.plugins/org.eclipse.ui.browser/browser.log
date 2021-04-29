@@ -1,0 +1,7 @@
+
+Apr 28, 2021 20:41:58.62 NEW SESSION
+Apr 28, 2021 20:41:58.62 [2684:4432:0428/204158.623:ERROR:device_event_log_impl.cc(214)] [20:41:58.623] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 28, 2021 20:41:58.62 [2684:4432:0428/204158.623:ERROR:device_event_log_impl.cc(214)] [20:41:58.623] USB: usb_device_handle_win.cc:1054 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 29, 2021 09:10:16.78 [2684:9184:0429/091016.783:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Apr 29, 2021 09:10:16.93 [2684:4432:0429/091016.933:ERROR:device_event_log_impl.cc(214)] [09:10:16.904] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Apr 29, 2021 09:10:22.28 [2684:11212:0429/091022.288:ERROR:get_updates_processor.cc(257)] PostClientToServerMessage() failed during GetUpdates with error 2

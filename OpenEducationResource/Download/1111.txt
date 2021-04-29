@@ -1,0 +1,1 @@
+<td><%=pname%></td><td><%=pid%></td><td><%=quantity%></td><td><%=price%></td><td><img src="images/<%=filename%>" height="200 px"/></td><td><a href="Buy_Product.jsp">Buy</a></td>

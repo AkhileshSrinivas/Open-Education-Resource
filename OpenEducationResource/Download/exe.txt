@@ -1,0 +1,16 @@
+%SystemRoot%\system32\cmd.exe
+
+
+codeforge.com
+
+http://www.enggroom.com/java.aspx
+
+
+
+http://nlp.stanford.edu/software/stanford-corenlp-full-2018-01-31.zip
+
+https://www.youtube.com/watch?v=nDKLrf7HC-k
+
+https://www.youtube.com/watch?v=H4gwFtpUglQ
+
+https://www.kaggle.com/ntnu-testimon/paysim1
