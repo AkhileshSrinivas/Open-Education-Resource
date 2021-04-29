@@ -60,7 +60,7 @@ Once the author uploads the file, the file appeal will go to editor so that he c
 
 Editor will have the power to receive or discard the file if the file does not encompass accurate information related to keywords.
 
-# User's search
+# User's search page
 
 ![alt text](https://res.cloudinary.com/web-dev-app/image/upload/v1619695309/Screenshot_528_oq31gk.png)
 
@@ -70,24 +70,24 @@ It displays the keywords based on the electron bonds values which has maximum va
 
 Based on the keywords, user will acquire the data and with the support of electron it will display precise information to user.
 
-# Technologies
+# Technologies:
 
 # Front-end
 
-- [HTML]
-- [CSS]
-- [Bootstrap]
-- [JavaScript]
-- [JSP]
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+- JSP
 
 # Back-end
 
-- [Java]
+- Java
 
 # Server
 
-- [Apache Tomcat]
+- Apache Tomcat
 
 # Database
 
-- [MySql Workbench]
+- MySql Workbench
