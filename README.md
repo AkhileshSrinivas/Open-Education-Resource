@@ -86,4 +86,4 @@ Based on the keywords, user will acquire the data and with the support of electr
 - Servlet
 - Apache Tomcat
 - JDBC
-- MySql Workbench
+- MySQL
